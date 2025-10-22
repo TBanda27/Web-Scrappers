@@ -63,7 +63,7 @@ def scrape_daft_page(driver, url, seen_urls):
                 continue
 
             # Extract home URL
-            home_url = f"https://www.daft.ie{house_url_tag['href']}" if house_url_tag and house_url_tag.get(
+            home_url = f"{house_url_tag['href']}" if house_url_tag and house_url_tag.get(
                 'href') else None
 
             # IMPORTANT: Check for duplicates
